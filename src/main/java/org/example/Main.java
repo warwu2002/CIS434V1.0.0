@@ -379,8 +379,7 @@ public class Main extends VerticalLayout {
 
         // Method to add classes to a specific day
         public void setClassesForDay(DayOfWeek day, ClassSchedule classSchedule) {
-            String classDetails = classSchedule.className() + " (" + classSchedule.classRoom() + ") "
-                    + "[" + formatTime(classSchedule.startTime()) + " - " + formatTime(classSchedule.endTime()) + "]";
+            String classDetails = classSchedule.className() + " (" + classSchedule.classRoom() + ")";
 
             switch (day) {
                 case MONDAY -> mondayClasses += classDetails + "\n";
